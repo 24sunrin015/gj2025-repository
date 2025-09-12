@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-    AWS_ACCOUNT_ID: 156041424727
+    AWS_ACCOUNT_ID: 571480186401
     REPOSITORY_NAME: red
     AWS_REGION: ap-northeast-2
     GITHUB_USERNAME: 24sunrin015
