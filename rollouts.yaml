@@ -34,4 +34,4 @@ spec:
       activeService: green-service
       autoPromotionEnabled: true
 
-
+ 
