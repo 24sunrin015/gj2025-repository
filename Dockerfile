@@ -2,12 +2,11 @@ FROM alpine:latest
 
 WORKDIR /app
 
-COPY green /app/green
+COPY red /app/red
 
 RUN apk add --no-cache ca-certificates tzdata && \
-    chmod +x /app/green
+    chmod +x /app/red
 
 EXPOSE 8080
 
-ENTRYPOINT ["/app/green"]
- 
+ENTRYPOINT ["/app/red"]
