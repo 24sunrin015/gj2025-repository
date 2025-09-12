@@ -10,3 +10,4 @@ RUN apk add --no-cache ca-certificates tzdata && \
 EXPOSE 8080
 
 ENTRYPOINT ["/app/green"]
+ 
