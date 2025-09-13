@@ -22,7 +22,7 @@ spec:
         eks.amazonaws.com/nodegroup: gj2025-eks-app-nodegroup
       containers:
       - name: green
-        image: 156041424727.dkr.ecr.ap-northeast-2.amazonaws.com/green:latest
+        image: 571480186401.dkr.ecr.ap-northeast-2.amazonaws.com/green:latest
         imagePullPolicy: Always
         env:
         - name: DB_USER
