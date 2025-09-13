@@ -29,8 +29,9 @@ phases:
       - echo Updating rollouts.yaml...
       - git config --global user.email "ci@juany.dev"
       - git config --global user.name "CI Bot"
+      - export TOKEN=$(echo $GITHUB_TOKEN | jq -r '.token')
       - git config --global credential.helper store
-      - echo "https://$GITHUB_USERNAME:$GITHUB_TOKEN@github.com" > ~/.git-credentials
+      - echo "https://$GITHUB_USERNAME:$TOKEN@github.com" > ~/.git-credentials
       - git clone https://github.com/$GITHUB_USERNAME/gj2025-repository.git
       - cd gj2025-repository
       - git checkout gitops-red
